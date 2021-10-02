@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+nav {
+    display: flex;
+    background-color: #fff;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 900px;
+}
+
+.ingredients-list {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+}
+
+div[class^="nutritional-content"] {
+    display: flex;
+}
+
+.nutritional-content-wrapper {
+    width: 80%;
+    margin: 20px auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nutritional-content-wrapper > span {
+    font-size: 0.8rem;
+}
+
+.nutritional-content {
+    width: 80%;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+.nutritional-content-left,
+.nutritional-content-right {
+    flex-direction: column;
+}
+
+.nutritional-content-right {
+    text-align: right;
+}
+
+.campaign-offer {
+    background-color: #F7D8AA;
+    width: 80%;
+    height: 3.5rem;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+}
+
+.quality-section {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.quality-cards {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.quality-card {
+    border: 1px solid #000;
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+div[class^="card-header"] {
+    height: 44px;
+}
+
+.card-header-intestines {
+    background-color: #3354A5;    
+}
+
+.card-header-vitamins {
+    background-color: #ECECEC;
+}
+
+.card-header-sugar {
+    background-color: #E3AF66;
+}
+
+.card-header-fat {
+    background-color: #F7D8AA;
+}
+
+footer {
+    background-color: #F7D8AA;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.social-logo-img {
+    width: 32px;
+    margin-top: 16px;
+    margin-right: 16px;
+}
+
+.contact-info,
+.social-media-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social-media-icons {
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width:37.5rem){
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 12.5rem;
+    }
+    
+    .contact-info,
+    .social-media-icons {
+        height: 8.75rem;
+    }
+
+    .quality-cards {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .campaign-offer {
+        font-size: 1.3rem;
+    }
+
+    .nutritional-content-wrapper > span {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 53.438rem){
+    .ingredients-list,
+    .quality-cards {
+        width: 80%;
+    }
+
+    nav {
+        justify-content: flex-end;
+    }
+
+    .quality-cards {
+        justify-content: space-between;
+    }
+
+    .campaign-offer {
+        font-size: 1.3rem;
+    }
+}
